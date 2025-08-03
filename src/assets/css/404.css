@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for the range input thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px; /* Adjust as needed */
+  height: 24px; /* Adjust as needed */
+  border-radius: 50%;
+  background: white; /* Thumb color */
+  border: 2px solid #333; /* Thumb border */
+  cursor: pointer;
+  margin-top: -8px; /* Compensate for height difference */
+  box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid #333;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
